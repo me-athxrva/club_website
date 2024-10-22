@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="{{ url_for('static', filename='assets/favicon.ico') }}"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='stylesheets/style.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='stylesheets/preloader.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='stylesheets/cursor.css') }}"
+    />
+    <title>Bashcraft | VITB</title>
+  </head>
+  <body class="body">
+    <!-- Preloader -->
+    <section class="preloader">
+      <span
+        ><img
+          class="loader_img"
+          id="loader_img"
+          src="{{ url_for('static', filename='assets/logo.png') }}"
+      /></span>
+    </section>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#">
+          <img src="/static/assets/bash.webp" alt="logo" />
+        </a>
+      </div>
+      <div class="login">
+        <button
+          class="login_btn"
+          onmouseenter="on_enter('white')"
+          onmouseleave="on_exit('red')"
+        >
+          Login
+        </button>
+      </div>
+    </nav>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+
+    <!-- Content -->
+    <section class="content1">
+      <div class="welcome">Welcome to</div>
+      <div class="bashcraft">
+        <h1>./cd bashcraft</h1>
+        <h1>BASHCRAFT</h1>
+      </div>
+
+      <div class="tagline">
+        <p>
+          The place to collaborate,create and push the boundaries of what's
+          possible
+        </p>
+      </div>
+      <div class="join_us">
+        <button class="join_btn" onmouseenter="on_enter('white')" onmouseleave="on_exit('red')">Join Us</button>
+      </div>
+    </section>
+
+    <!-- section 2 -->
+     <section class="content2">
+      hello world
+     </section>
+  </body>
+  <script src="/static/js/script.js"></script>
+  <script src="/static/js/cursor.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+</html>

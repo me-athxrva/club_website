@@ -1,0 +1,29 @@
+.preloader{
+    position: absolute;
+    z-index: 1000;
+    background: #fff;
+    width: 100vw;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+.preloader span{
+    animation: fadeinout 1.5s linear infinite;
+    background-color: transparent;
+}
+.preloader .loader_img{
+    background-color: transparent;
+    width: 10vw;
+}
+
+@keyframes fadeinout {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
