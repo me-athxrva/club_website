@@ -24,14 +24,47 @@
   </head>
   <body class="body">
     <!-- Preloader -->
-    <section class="preloader">
+    <!-- <section class="preloader">
       <span
         ><img
           class="loader_img"
           id="loader_img"
           src="{{ url_for('static', filename='assets/logo.png') }}"
       /></span>
-    </section>
+    </section> -->
+
+    <!-- loader -->
+
+    <div class="pg_loader"></div>
+
+    <!-- SVG Preloader -->
+
+    <svg
+      class="preloader"
+      id="eGxs9DgolEh1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 0 1920 1080"
+      shape-rendering="geometricPrecision"
+      text-rendering="geometricPrecision"
+      project-id="ed52772553dd4588b797eee7eacc8537"
+      export-id="c300871c8f134e20ac18e051d4518c30"
+      cached="false"
+    >
+      <text
+        dx="0"
+        dy="0"
+        font-family='"eGxs9DgolEh1:::Poppins"'
+        font-size="200"
+        font-weight="800"
+        transform="translate(445.840637 610.136459)"
+        stroke-width="0"
+      >
+        <tspan y="0" font-weight="800" stroke-width="0">
+          <![CDATA[ bashcraft ]]>
+        </tspan>
+      </text>
+    </svg>
 
     <!-- Navbar -->
     <nav class="navbar">
@@ -44,7 +77,8 @@
         <button
           class="login_btn"
           onmouseenter="on_enter('white')"
-          onmouseleave="on_exit('red')"
+          onmouseleave="on_exit('greenyellow')"
+          onclick="click_btn('/test')"
         >
           Login
         </button>
@@ -71,8 +105,7 @@
       <div class="join_us">
         <button
           class="join_btn"
-          onmouseenter="on_enter('white')"
-          onmouseleave="on_exit('red')"
+          onclick="click_btn('/test')"
         >
           Join Us
         </button>

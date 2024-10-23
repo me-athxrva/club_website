@@ -13,8 +13,8 @@ window.addEventListener("mousemove", function(e){
 function on_enter(color) {
     gsap.to('.cursor',{
         backgroundColor: color,
-        height: '0%',
-        width: '0%',
+        height: '0px',
+        width: '0px',
         duration: .2,
         ease: 'power1.inout',
     });
@@ -26,6 +26,6 @@ function on_exit(color) {
         height: '20px',
         width: '20px',
         duration: .2,
-        ease: 'power1.inout',
+        ease: 'none',
     });
 }
