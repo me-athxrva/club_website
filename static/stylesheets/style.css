@@ -21,7 +21,7 @@ html {
 }
 
 .pg_loader {
-  background-color: greenyellow;
+  background-color: #3fc25b;
   height: 0px;
   width: 0px;
   border-radius: 100%;
@@ -30,7 +30,7 @@ html {
   pointer-events: none;
   left: 0;
   top: 0;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   pointer-events: none;
   overflow: hidden;
 }
